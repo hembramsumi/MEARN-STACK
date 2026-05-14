@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pricing Card</title>
+	<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background:#0f172a;
+			color: white;
+			min-height: 100vh;
+			padding: 40px;
+		}
+		.box{
+			/*display: flex;
+			justify-content: center;*/
+			/*height: 500px;*/
+			/*width: 400px;*/
+			/*margin: auto;*/
+			padding: 30px;
+			min-width: 100%;
+			/*border: 5px solid white;*/
+		}
+		h1{
+			font-size: 48px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		.pricing{
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+			flex-wrap: wrap;
+		}
+		.card1,.card2,.card3{
+			/*height: 100px;*/
+			width: 250px;
+			padding: 30px;
+			font-size: 10px;
+			background:#1e293b;
+		    border:1px solid #334155;
+		    border-radius:20px;
+		    box-shadow: 0px 14px 25px rgba(0, 0, 0, .4);
+		}
+		.card_type{
+			margin-bottom: 10px;
+		}
+		.price span{
+			margin-right: 5px;
+
+		}
+		.price{
+			margin-bottom: 20px;
+
+		}
+		.amount{
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.month{
+			font-weight: bold;
+			font-size: 18px;
+
+		}
+		.features{
+			/*margin-left: 10px;*/
+			list-style: none;
+			margin-bottom: 20px;
+		}
+		.features li{
+			margin-bottom: 10px;
+			/*font-weight: bold;*/
+			font-size: 15px;
+		}
+		.features i{
+			color:#22c55e;
+			margin-right: 5px;
+		}
+		.button button{
+			width: 100%;
+			text-align: center;
+			padding: 10px;
+			background:linear-gradient(to right,#8b5cf6,#a855f7);
+		    border:none;
+		    color:white;
+		    border-radius:10px;
+		    font-weight:bold;
+		    transition:.3s;
+		}
+		.button button:hover{
+			cursor: pointer;
+			transform:translateY(-3px);
+    		opacity:.9;
+		}
+		.card2{
+			background:linear-gradient(135deg,#7c3aed,#a855f7);
+			transition: 3s;
+		}
+		.card2:hover{
+			transform: scale(1.05);
+
+		}
+	</style>
+</head>
+<body>
+	<div class="pricing_card">
+		<div class="box">
+			<h1>Choose the plan that fits <br>your needs.</h1>
+			<section class="pricing">
+				<div class="card1">
+					<h2 class="card_type">
+						Basic
+					</h2>
+					<p class="price"><span class="amount">$9</span>
+					<span class="month">/month</span></p>
+					<ul class="features">
+						<li><i class="fa-solid fa-check"></i>5 Projects</li>
+						<li><i class="fa-solid fa-check"></i>10GB Storage</li>
+						<li><i class="fa-solid fa-check"></i>Basic Supported</li>
+						<li><i class="fa-solid fa-check"></i>Limited Access</li>
+					</ul>
+					<div class="button">
+						<button type="submit">Choose Plan</button>
+					</div>
+
+				</div>
+				<div class="card2">
+					<h2 class="card_type">
+						Pro
+					</h2>
+					<p class="price">
+						<span class="amount">$29</span>
+					
+						<span class="month">/month</span>
+					</p>
+					<ul class="features">
+						<li><i class="fa-solid fa-check"></i>Unlimited Projects</li>
+						<li><i class="fa-solid fa-check"></i>100 GB Storages</li>
+						<li><i class="fa-solid fa-check"></i>Priority Support</li>
+						<li><i class="fa-solid fa-check"></i>Full Access</li>
+					</ul>
+					<div class="button">
+						<button type="submit">Choose Plan</button>
+					</div>
+			</div>
+				<div class="card3">
+					<h2 class="card_type">
+						Premium
+					</h2>
+					<p class="price">
+						<span class="amount">$59</span>
+					
+						<span class="month">/month</span>
+					</p>
+					<ul class="features">
+						<li><i class="fa-solid fa-check"></i>Unlimited Projects</li>
+						<li><i class="fa-solid fa-check"></i>1 TB Storages</li>
+						<li><i class="fa-solid fa-check"></i>24/7 Support</li>
+						<li><i class="fa-solid fa-check"></i>Premium Features</li>
+					</ul>
+					<div class="button">
+						<button type="submit">Choose Plan</button>
+					</div>
+			</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

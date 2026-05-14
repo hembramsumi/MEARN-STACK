@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Glassmorphism UI</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#d7f8ef;
+}
+
+/* MAIN CARD */
+
+.card{
+    width:420px;
+    height:620px;
+    background:#07142f;
+    border-radius:35px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0px 20px 40px rgba(0,0,0,.35);
+}
+
+/* BIG SHAPES */
+
+.shape1{
+    width:240px;
+    height:240px;
+    background:linear-gradient(135deg,#ffcc33,#ff7b00);
+    border-radius:50%;
+    position:absolute;
+    top:-80px;
+    left:-80px;
+}
+
+.shape2{
+    width:230px;
+    height:230px;
+    background:linear-gradient(135deg,#00ffd5,#00bfa6);
+    border-radius:50%;
+    position:absolute;
+    top:-70px;
+    right:-70px;
+}
+
+.shape3{
+    width:260px;
+    height:260px;
+    background:linear-gradient(135deg,#ff9900,#ff5500);
+    border-radius:50%;
+    position:absolute;
+    bottom:-100px;
+    left:-90px;
+}
+
+.shape4{
+    width:220px;
+    height:220px;
+    background:linear-gradient(135deg,#00e5ff,#005eff);
+    border-radius:50%;
+    position:absolute;
+    bottom:-80px;
+    right:-80px;
+}
+
+/* HALF CIRCLES */
+
+.half1{
+    width:220px;
+    height:220px;
+    border:25px solid rgba(255,255,255,.08);
+    border-radius:50%;
+    position:absolute;
+    top:-40px;
+    left:-30px;
+}
+
+.half2{
+    width:170px;
+    height:170px;
+    border:22px solid rgba(255,255,255,.08);
+    border-radius:50%;
+    position:absolute;
+    bottom:70px;
+    right:-40px;
+}
+
+/* FLOATING BALLS */
+
+.ball1{
+    width:90px;
+    height:90px;
+    background:radial-gradient(circle,#2affea,#009688);
+    border-radius:50%;
+    position:absolute;
+    top:20px;
+    left:40px;
+    box-shadow:0px 10px 30px rgba(0,255,200,.5);
+}
+
+.ball2{
+    width:70px;
+    height:70px;
+    background:radial-gradient(circle,#ffe066,#ff9800);
+    border-radius:50%;
+    position:absolute;
+    top:35px;
+    right:140px;
+    box-shadow:0px 10px 25px rgba(255,180,0,.5);
+}
+
+.ball3{
+    width:85px;
+    height:85px;
+    background:radial-gradient(circle,#2affea,#009688);
+    border-radius:50%;
+    position:absolute;
+    bottom:120px;
+    right:-20px;
+    box-shadow:0px 10px 30px rgba(0,255,200,.5);
+}
+
+/* GLASS EFFECT */
+
+.glass{
+    width:290px;
+    height:350px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-radius:25px;
+    position:absolute;
+    top:150px;
+    left:65px;
+    padding:28px;
+    color:white;
+    overflow:hidden;
+}
+
+/* INNER BLUR GLOW */
+
+.glow{
+    width:220px;
+    height:220px;
+    background:#00ffd5;
+    filter:blur(90px);
+    opacity:.45;
+    position:absolute;
+    top:20px;
+    right:-40px;
+}
+
+/* CONTENT */
+
+.logo{
+    font-size:14px;
+    letter-spacing:1px;
+    border:1px solid rgba(255,255,255,.3);
+    display:inline-block;
+    padding:10px;
+    margin-bottom:30px;
+}
+
+h1{
+    font-size:44px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:15px;
+    color:#ddd;
+    line-height:1.7;
+}
+
+.bottom{
+    position:absolute;
+    bottom:30px;
+    left:28px;
+    font-size:15px;
+    color:#fff;
+}
+
+.bottom span{
+    color:#00ffd5;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="shape1"></div>
+    <div class="shape2"></div>
+    <div class="shape3"></div>
+    <div class="shape4"></div>
+
+    <div class="half1"></div>
+    <div class="half2"></div>
+
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+
+    <div class="glass">
+
+        <div class="glow"></div>
+
+        <div class="logo">
+            THEGOOD<br>NETWORK
+        </div>
+
+        <h1>Invite only right now.</h1>
+
+        <p>
+            10 Million+ people have joined our network.
+            We invite you to join the tribe.
+        </p>
+
+        <div class="bottom">
+            Already have an account? <span>Sign In</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			min-height: 100vh;
+			justify-content: center;
+			/*align-items: center;*/
+			align-items:flex-start;
+			padding-top:80px;
+			background:#d7f8ef;
+
+		}
+		.box{
+			height: 400px;
+			width: 500px;
+			max-width: 100%;
+			background:#07142f;
+			margin: auto;
+			position: relative;
+			border-radius: 25px;
+			box-shadow: 0 6px 18px rgba(0,0,0,.8);
+		}
+		.login_form{
+			padding: 40px;
+		}
+		.login_form label{
+			color: white;
+		}
+		.login_form input{
+			padding: 15px;
+			width: 100%;
+			border: none;
+			outline: none;
+			border-radius: 10px;
+			background:#0f1d3a;
+			color:white;
+		}
+		.login_form input:focus{
+			border: none;
+			outline: none;
+			border-radius: 10px;
+			color:white;
+			box-shadow:0 0 10px #00ffd5;
+		}
+		.button{
+			display: flex;
+			justify-content: center;
+		}
+		.button button{
+			padding: 15px;
+			font-size: 15px;
+			cursor: pointer;
+			border-radius:12px;
+			border: 0px;
+			background:#00ffd5;
+		    color:#07142f;
+		    font-weight:bold;
+		    transition:.3s;
+		}
+		.button button:hover{
+			background: lightgrey;
+			border-radius:12px;
+			border: 0px;
+			padding: 15px;
+			font-size: 15px;
+			background:#00c9aa;
+    		transform:scale(1.05);
+		}
+
+		.box h1{
+			color: white;
+			text-align: center;
+			padding: 30px;
+		}
+	</style>
+</head>
+<body>
+<div class="box">
+	<div class="login_form">
+		<h1>Login</h1>
+	<label>Email:</label>
+	<input type="email" name="email" placeholder="Enter Email"><br><br>
+	<label>Password:</label>
+	<input type="password" name="password" placeholder="Enter Password"><br><br>
+	<div class="button">
+		<button type="submit">Login</button>	
+	</div>
+	
+	</div>
+	
+</div>
+</body>
+</html>
